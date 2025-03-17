@@ -1,0 +1,81 @@
+body {
+	padding: 0px;
+	margin: 0px;
+    font-family: 'Raleway', sans-serif;
+	cursor: default;
+}
+
+.wh{
+    color: #fff;
+}
+.txt_reg {
+    font-weight: 300;
+    font-size: 60px;
+}
+
+header {
+  background: url(../img/bg1.jpg) no-repeat center top / cover;
+    height: 1080px;
+    position: relative;
+    border-bottom: 5px solid #4bcaff;
+}
+
+.all_div {
+padding-top: 50px;
+}
+
+.container{
+    max-width: 1400px;
+    justify-content: space-evenly;
+}
+.timers_div {
+   
+}
+
+button {
+    color: white;
+    font-size: 40px;
+    border-radius: 11px;
+    background-color: slateblue;
+    text-transform: none;
+}
+.but_div button{
+background-color: limegreen;
+}
+.T1{
+    color: orangered;
+    font-weight: 400;
+}
+.T2{
+    color: deepskyblue;
+    font-weight: 400;
+}
+
+.div_table{
+    
+    }
+    .star {
+        color: yellow;
+    }
+.div_table_el {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.div_table_el span {
+    margin-right: 10px;
+}
+
+.div_table_el p {
+    margin-right: 20px;
+}
+
+section {
+    background: url(../img/bg2.jpg) no-repeat center top / cover; 
+}
+td {
+    padding-right: 10px;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>SCORE</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main_RANK.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,500,600" rel="stylesheet">
+
+
+</head>
+<body>
+<header>
+  <h1 class="wh txt_reg hh">Score</h1>
+<div class="container">
+
+<div class="player_left">
+    <div class="play_st">
+        <p class="name">Player 1</p>
+        <p class="lvl">Level: <span id="player1-level">1</span></p>
+        <p>Points: <span id="player1-score">0</span></p>
+        <button onclick="addPoints('player1', 100)">+</button>
+        <button onclick="removePoints('player1', 100)">-</button>
+    </div>
+
+
+    <div class="play_st">
+        <p>Player 2</p>
+        <p>Level: <span id="player2-level">1</span></p>
+        <p>Points: <span id="player2-score">0</span></p>
+        <button onclick="addPoints('player2', 100)">+</button>
+        <button onclick="removePoints('player2', 100)">-</button>
+    </div>
+
+    <div class="play_st">
+        <p>Player 3</p>
+        <p>Level: <span id="player3-level">1</span></p>
+        <p>Points: <span id="player3-score">0</span></p>
+        <button onclick="addPoints('player3', 100)">+</button>
+        <button onclick="removePoints('player3', 100)">-</button>
+    </div>
+
+
+    <div class="play_st">
+        <p>Player 4</p>
+        <p>Level: <span id="player4-level">1</span></p>
+        <p>Points: <span id="player4-score">0</span></p>
+        <button onclick="addPoints('player4', 100)">+</button>
+        <button onclick="removePoints('player4', 100)">-</button>
+    </div>
+        <div class="play_st">
+        <p class="name">Player 5</p>
+        <p class="lvl">Level: <span id="player5-level">1</span></p>
+        <p>Points: <span id="player5-score">0</span></p>
+        <button onclick="addPoints('player5', 100)">+</button>
+        <button onclick="removePoints('player5', 100)">-</button>
+    </div>
+
+
+    <div class="play_st">
+        <p>Player 6</p>
+        <p>Level: <span id="player6-level">1</span></p>
+        <p>Points: <span id="player6-score">0</span></p>
+        <button onclick="addPoints('player6', 100)">+</button>
+        <button onclick="removePoints('player6', 100)">-</button>
+    </div>
+
+    <div class="play_st">
+        <p>Player 7</p>
+        <p>Level: <span id="player7-level">1</span></p>
+        <p>Points: <span id="player7-score">0</span></p>
+        <button onclick="addPoints('player7', 100)">+</button>
+        <button onclick="removePoints('player7', 100)">-</button>
+    </div>
+
+
+    <div class="play_st">
+        <p>Player 8</p>
+        <p>Level: <span id="player8-level">1</span></p>
+        <p>Points: <span id="player8-score">0</span></p>
+        <button onclick="addPoints('player8', 100)">+</button>
+        <button onclick="removePoints('player8', 100)">-</button>
+    </div>
+</div>
+<!-- Добавьте аналогичные блоки для всех 16 игроков -->
+<div class="player_right">
+    <div class="play_st">
+        <p>Player 9</p>
+        <p>Level: <span id="player9-level">1</span></p>
+        <p>Points: <span id="player9-score">0</span></p>
+        <button onclick="addPoints('player9', 100)">+</button>
+        <button onclick="removePoints('player9', 100)">-</button>
+    </div>
+
+
+    <div class="play_st">
+        <p>Player 10</p>
+        <p>Level: <span id="player10-level">1</span></p>
+        <p>Points: <span id="player10-score">0</span></p>
+        <button onclick="addPoints('player10', 100)">+</button>
+        <button onclick="removePoints('player10', 100)">-</button>
+    </div>
+
+    <div class="play_st">
+        <p>Player 11</p>
+        <p>Level: <span id="player11-level">1</span></p>
+        <p>Points: <span id="player11-score">0</span></p>
+        <button onclick="addPoints('player11', 100)">+</button>
+        <button onclick="removePoints('player11', 100)">-</button>
+    </div>
+
+
+    <div class="play_st">
+        <p>Player 12</p>
+        <p>Level: <span id="player12-level">1</span></p>
+        <p>Points: <span id="player12-score">0</span></p>
+        <button onclick="addPoints('player12', 100)">+</button>
+        <button onclick="removePoints('player12', 100)">-</button>
+    </div>
+        <div class="play_st">
+        <p>Player 13</p>
+        <p>Level: <span id="player13-level">1</span></p>
+        <p>Points: <span id="player13-score">0</span></p>
+        <button onclick="addPoints('player13', 100)">+</button>
+        <button onclick="removePoints('player13', 100)">-</button>
+    </div>
+
+
+    <div class="play_st">
+        <p>Player 14</p>
+        <p>Level: <span id="player14-level">1</span></p>
+        <p>Points: <span id="player14-score">0</span></p>
+        <button onclick="addPoints('player14', 100)">+</button>
+        <button onclick="removePoints('player14', 100)">-</button>
+    </div>
+
+    <div class="play_st">
+        <p>Player 15</p>
+        <p>Level: <span id="player15-level">1</span></p>
+        <p>Points: <span id="player15-score">0</span></p>
+        <button onclick="addPoints('player15', 100)">+</button>
+        <button onclick="removePoints('player15', 100)">-</button>
+    </div>
+
+
+    <div class="play_st">
+        <p>Player 16</p>
+        <p>Level: <span id="player16-level">1</span></p>
+        <p>Points: <span id="player16-score">0</span></p>
+        <button onclick="addPoints('player16', 100)">+</button>
+        <button onclick="removePoints('player16', 100)">-</button>
+    </div>
+</div>
+
+
+
+</div>
+</header>
+<script>
+    function addPoints(playerId, points) {
+        var scoreElement = document.getElementById(playerId + '-score');
+        var currentScore = parseInt(scoreElement.textContent);
+        var newScore = currentScore + points;
+        scoreElement.textContent = newScore;
+        // Проверяем, нужно ли увеличить Level
+        checkLevel(playerId, newScore);
+    }
+
+    function removePoints(playerId, points) {
+        var scoreElement = document.getElementById(playerId + '-score');
+        var currentScore = parseInt(scoreElement.textContent);
+        if (currentScore >= points) {
+            var newScore = currentScore - points;
+            scoreElement.textContent = newScore;
+            // Проверяем, нужно ли понизить Level
+            checkLevel(playerId, newScore);
+        }
+    }
+
+    function checkLevel(playerId, score) {
+        var levelElement = document.getElementById(playerId + '-level');
+        var currentLevel = parseInt(levelElement.textContent);
+
+        if (score >= 200 * currentLevel) {
+            levelElement.textContent = currentLevel + 1; // Увеличиваем Level
+          }
+      
+        
+
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+

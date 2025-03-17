@@ -1,0 +1,90 @@
+body {
+	padding: 0px;
+	margin: 0px;
+    font-family: 'Raleway', sans-serif;
+	
+}
+
+.wh{
+    color: #fff;
+}
+.txt_reg {
+    font-weight: 300;
+    font-size: 60px;
+}
+
+header {
+  background: url(../img/bg1.jpg) no-repeat center top / cover;
+    height: 1080px;
+    position: relative;
+    border-bottom: 5px solid #4bcaff;
+}
+
+.all_div {
+padding-top: 50px;
+}
+
+.container{
+    display: flex;
+    max-width: 1400px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 35px;
+}
+.timers_div {
+   
+}
+
+button {
+    background-color: blueviolet;
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 20px;
+}
+.but_div button{
+background-color: limegreen;
+}
+.T1{
+    color: orangered;
+    font-weight: 400;
+}
+.T2{
+    color: deepskyblue;
+    font-weight: 400;
+}
+
+.hh {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.play_st{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+
+.play_st p {
+    padding-right: 20px;
+}
+.player_right {
+    color: #fff
+}
+
+.player_left {
+    color: #fff
+}
+
+p span:first-child {
+    color: red;
+}
+
+.play_st p:first-child {
+color: cyan;
+}

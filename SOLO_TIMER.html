@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TIMER</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main_TIMER.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,500,600" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header_fs txt_reg wh">
+      <body>
+<div class="container all_div">
+<div class="T1">
+  TIME: <span id="timer1" class="timers_div">00:00</span>
+  <button onclick="increaseTime(1)">+10 sec</button>
+  <button onclick="decreaseTime(1)">-10 sec</button>
+</div>
+
+<div class="but_div">
+<button onclick="startTimers()">START</button>
+<button onclick="pauseTimers()">PAUSE</button>
+</div>
+</div>
+    </header>
+ 
+<script>
+let interval1, interval2;
+let seconds1 = 0, seconds2 = 0;
+
+function startTimers() {
+  interval1 = setInterval(() => {
+    seconds1++;
+    document.getElementById('timer1').innerText = formatTime(seconds1);
+  }, 1000);
+  interval2 = setInterval(() => {
+    seconds2++;
+    document.getElementById('timer2').innerText = formatTime(seconds2);
+  }, 1000);
+}
+
+function pauseTimers() {
+  clearInterval(interval1);
+  clearInterval(interval2);
+}
+
+function formatTime(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const remainderSeconds = seconds % 60;
+  return `${String(minutes).padStart(2, '0')}:${String(remainderSeconds).padStart(2, '0')}`;
+}
+
+function increaseTime(timer) {
+  if (timer === 1) {
+    seconds1 += 10;
+    document.getElementById('timer1').innerText = formatTime(seconds1);
+  } else {
+    seconds2 += 10;
+    document.getElementById('timer2').innerText = formatTime(seconds2);
+  }
+}
+
+function decreaseTime(timer) {
+  if (timer === 1 && seconds1 >= 10) {
+    seconds1 -= 10;
+    document.getElementById('timer1').innerText = formatTime(seconds1);
+  } else if (timer === 2 && seconds2 >= 10) {
+    seconds2 -= 10;
+    document.getElementById('timer2').innerText = formatTime(seconds2);
+  }
+}
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

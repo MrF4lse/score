@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Шкала с микрофоном</title>
+    <style>
+        .meter {
+            position: relative;
+            width: 300px;
+            height: 30px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .progress {
+            position: absolute;
+            height: 100%;
+            width: 0;
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="meter">
+        <div class="progress" id="progress"></div>
+    </div>
+    <button onclick="startRecording()">Начать</button>
+    <button onclick="stopRecording()">Закончить</button>
+
+    <script>
+        let mediaRecorder;
+        let chunks = [];
+        
+        function startRecording() {
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then(function (stream) {
+                    mediaRecorder = new MediaRecorder(stream);
+                    mediaRecorder.ondataavailable = function (e) {
+                        chunks.push(e.data);
+                        let blob = new Blob(chunks, { 'type' : 'audio/ogg; codecs=opus' });
+                        let audioURL = URL.createObjectURL(blob);
+                        // Напишите здесь логику обновления шкалы на основе аудиосигнала 
+                    }
+                    mediaRecorder.start();
+                });
+        }
+
+        function stopRecording() {
+            mediaRecorder.stop();
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
